@@ -1,0 +1,98 @@
+.goods {
+    width: 100%;
+    height: 100%;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        flex-wrap: wrap;
+        width: 90%;
+        height: 100%;
+        margin: 50px auto;
+        gap: 40px;
+        justify-content: space-around;
+
+
+        .card {
+            max-height: 452px;
+            border-radius: 6px;
+            border: 1px solid #003b64;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 5px;
+            overflow: hidden;
+
+            .image {
+                width: 95%;
+                height: 80%;
+                margin: 5px;
+                overflow: hidden;
+                margin-bottom: 10px;
+
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.3s;
+
+                    &:hover {
+
+                        transform: scale(1.3)rotate(5deg);
+                    }
+                }
+            }
+
+            .info {
+                width: 100%;
+                height: 20%;
+                text-align: center;
+
+
+                h4 {
+                    width: 100%;
+                    height: 40%;
+                    margin-bottom: 10px;
+                    font-size: 19px;
+                    font-family: 'Josefin Sans';
+                }
+
+                p {
+                    width: 80%;
+                    height: 30px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 20px;
+                    overflow: hidden;
+                    font-family: 'Teko';
+
+                    button {
+                        color: #003b64;
+                        border: none;
+                        background-color: white;
+                        position: relative;
+                        cursor: pointer;
+
+                        &:focus {
+                            outline: none;
+                            background-color: white;
+                            color: #003b64;
+                        }
+                    }
+
+                    span {
+                        flex: 1;
+                    }
+
+                    ;
+                }
+            }
+
+
+        }
+    }
+}
